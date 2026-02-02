@@ -1,9 +1,8 @@
 # High-Level Architecture (HLD)
 
 ## Project Name
-Intelligent Hospital Flow & Lab Bottleneck Optimization System
-
----
+Advanced Hospital Flow & Lab Bottleneck Optimization System
+------
 
 ## Architecture Overview
 
