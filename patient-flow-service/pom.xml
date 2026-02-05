@@ -49,7 +49,13 @@
             <artifactId>resilience4j-spring-boot3</artifactId>
 			    <version>2.2.0</version>
         </dependency>
-
+<!-- Source: https://mvnrepository.com/artifact/org.springframework.kafka/spring-kafka -->
+<dependency>
+    <groupId>org.springframework.kafka</groupId>
+    <artifactId>spring-kafka</artifactId>
+    <version>4.0.2</version>
+    <scope>compile</scope>
+</dependency>
         <!-- Lombok -->
         <dependency>
             <groupId>org.projectlombok</groupId>
