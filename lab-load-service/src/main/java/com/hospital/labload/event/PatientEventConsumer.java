@@ -22,7 +22,7 @@ public class PatientEventConsumer {
 
         // This method is called automatically by Kafka
         // whenever a new patient event arrives
-
+System.out.println(">>> Kafka event received in lab-load-service: " + event);
         labLoadService.handlePatientEvent(event);
     }
 }

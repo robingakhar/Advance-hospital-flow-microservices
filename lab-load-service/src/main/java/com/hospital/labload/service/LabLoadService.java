@@ -32,4 +32,16 @@ public class LabLoadService {
             }
         }
     }
+
+    public void processPatientEvent(PatientDomainEvent event) {
+
+    // Example logic
+    // 1. Track patient movement
+    // 2. Measure time spent in department
+    // 3. Detect lab queue build-up
+
+    System.out.println(
+        "Processing patient event: " + event
+    );
+}
 }

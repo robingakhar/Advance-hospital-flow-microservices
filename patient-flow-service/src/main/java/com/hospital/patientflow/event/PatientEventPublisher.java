@@ -61,5 +61,7 @@ public class PatientEventPublisher {
                 );
             }
         }
+        System.out.println(">>> in publiser sent to Kafka: " + event);
+
     }
 }

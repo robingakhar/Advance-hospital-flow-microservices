@@ -6,6 +6,7 @@ import com.hospital.patientflow.repository.PatientEventRepository;
 import com.hospital.patientflow.event.PatientEventPublisher;
 import com.hospital.patientflow.event.PatientDomainEvent;
 
+import java.time.Instant;
 import java.time.LocalDateTime;
 import java.util.UUID;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -36,11 +37,13 @@ public class PatientFlowService {
                 UUID.randomUUID().toString(),
                 request.getEventType(),
                 "patient-flow-service",
-                LocalDateTime.now(),
+                Instant.now(),
                 request.getPatientId(),
                 request.getVisitId()
         );
-
+System.out.println(event.toString());
         publisher.publish(event);
+        System.out.println(">>> Event sent to Kafka: " + event);
+
     }
 }
