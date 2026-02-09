@@ -19,9 +19,11 @@ import java.util.Map;
 
 @Configuration
 @EnableKafka
+@SuppressWarnings("removal")
 public class KafkaConsumerConfig {
 
     @Bean
+    @SuppressWarnings("deprecation")
    public ConsumerFactory<String, PatientDomainEvent> consumerFactory() {
 
  
