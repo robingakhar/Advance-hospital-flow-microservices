@@ -17,6 +17,10 @@ public class LabOverloadAlertConsumer {
     )
     public void consume(LabOverloadEvent event) {
 
+        if ("SLA_BREACH".equals(event.getEventType())) {
+            log.error("🚨 SLA BREACH ALERT: {}", event);
+        }
+        else
         log.error(
                 "🚨 ALERT: Lab overload detected! Load = {}, Capacity = {}, Time = {}",
                 event.getCurrentLoad(),
